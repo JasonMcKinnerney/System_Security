@@ -1,0 +1,38 @@
+Due on 9/16, submit a SINGLE file as doc, docx, or pdf in Canvas.
+
+1. (25%) Install and run Wireshark. Browse http://fuxi.cs.txstate.edu/~download/tools/, and use Wireshark to capture the first http request packet to this website and the following http response packet. Then show the information below.
+(a) Use "http" as filter in wireshark and show the screenshot of the http request packet when browsing the website.
+(b) What are the source and destination in the MAC header of the request?
+(c) What are the source and destination in the IP header of the request?
+(d) What are the source and destination in the TCP header of the request?
+(e) What is the HTTP payload in the request (if any)?
+(f) What is the HTTP payload in the response (if any)?
+
+2. (15%) Use Wireshark to open the attached "hw1.q2.pcapng" that includes the sniffed traffic when a user tried to browse a website and download a text file.
+(a) What is the IP address of the website?
+(b) What are the web URLs the user successfully browsed in order?
+(c) What is the content of the text file (not just text, but a text file, and only one text file) from the website?
+
+3. (15%) Install Zenmap. Identify the IP address of your own computer.
+(a) Run Zenmap to scan your computer with "Quick scan". Show the screen shot of the output of NMap.
+(b) Run Zenmap to scan your computer with "Intense scan". Show the screen shot of the output of NMap.
+(c) Compare the results of "Quick scan" and "Intense scan", and list the ports found in "Intense scan" but not "Quick scan".
+
+4. (25%) For each scenario, choose ONLY ONE BEST out of confidentiality, integrity and availability, and describe a defensive measure to either prevent or detect the security violation.
+(a) John copies Mary's homework.
+(b) Paul crashes Linda's system.
+(c) Carol changes the amount of Angelo's check from $100 to $1000.
+(d) Gina forges Roger's signature on a deed.
+(e) Rhonda deletes all web services from unversity's web servers.
+(f) Henry spoofs Julie's IP address to gain access to her computer.
+
+=======
+Follow the instruction at http://fuxi.cs.txstate.edu/~download/tools/ctf/docker/notes.txt to get and use the CTF docker images.
+
+All CTF docker images are available at http://fuxi.cs.txstate.edu/~download/tools/ctf/docker/
+
+No partial points will be assigned to the CTF questions.
+
+5. (10%) Get the CTF docker image of "1.race". Show the screen shot when you catch the flag. You may read the partial solution.
+
+6. (10%) Get the CTF docker image of "2.catch". Show the screen shot when you catch the flag. You may read the partial solution.

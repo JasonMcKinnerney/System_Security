@@ -1,0 +1,47 @@
+Due on 11/9, submit a single file as doc, docx, or pdf in Canvas
+
+1. (20%) The followings are Java code that have the SQL injection vulnerability, where id is an input.
+
+In Java, "abc" (in a pair of double quotes) is a string. "abc" + x is to concatenate the string "abc" and the variable x.
+
+(a) If id is an integer, the query string will be the following. Show two exploitations that always makes a true condition of the query.
+
+String query = "select name from students where id = " + id + ";";
+
+(b) If id is a string, the query string will be the following. Show two exploitations that always makes a true condition of the query.
+
+String query = "select name from students where id = '" + id + "';";
+
+2. (20%) In a Linux (or Linux subsystem), create a text file, name it as foo.txt. Then make sure you can run "cat foo.txt". 
+(a) Trace the libraray calls of "cat foo.txt". Use the command "ltrace cat foo.txt". Copy and paste the result in your report.
+(b) Explain what is the first library call in your result.
+(c) Trace the system calls of "cat foo.txt". Use the command "strace cat foo.txt". Copy and paste the result in your report.
+(d) Explain what is the first system call in your result.
+Note, you may need to install ltrace and strace in your Linux (or subsystem). In some Linux distributions, ltrace may be not working due to a library issue.
+
+3. (10%) Convert the following script to a normal html without the javascript script. Copy and paste the converted html in your submission.
+
+<script>
+document.write(unescape('%3C%68%74%6D%6C%3E%0A%3C%74%69%74%6C%65%3E%45%6E%63%72%79%70%74%65%64%20%48%54%4D%4C%3C%2F%74%69%74%6C%65%3E%0A%3C%62%6F%64%79%3E%48%65%6C%6C%6F%20%77%6F%72%6C%64%21%3C%2F%62%6F%64%79%3E%0A%3C%2F%68%74%6D%6C%3E'));
+</script>
+
+4. (10%) DoS attacks could target computing capacity by exhausting processes and CPU time. In Linux, we can use the command "ulimit" to stop this kind of DoS attacks. Show and discuss the two options of "ulimit" that are needed to stop the attack by limiting processes and CPU time?
+
+5. (10%) File checksum is often used to check if a file was maliciously modified.
+(a) In Linux, what is the command to get a sha256 checksum of a file?
+(b) What is the sha256 checksum of "hw4.txt"?
+(c) Add a space to any place in "hw4.txt", and recompute and show the new sha256 checksum of "hw4.txt"
+
+=======
+All CTF docker images are at http://fuxi.cs.txstate.edu/~download/tools/ctf/docker/
+
+No partial points will be assigned to the CTF questions.
+
+6. (10%) Get the CTF docker image of "7.pic". Show the screen shot when you catch the flag. You may read the partial solution.
+
+7. (10%) Get the CTF docker image of "8.php". Show the screen shot when you catch the flag. You may read the partial solution.
+
+8. (10%) Get the CTF docker image of "9.sqli". Show the screen shot when you catch the flag. You may read the partial solution.
+
+     
+

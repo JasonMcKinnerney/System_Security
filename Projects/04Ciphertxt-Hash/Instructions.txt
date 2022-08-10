@@ -1,0 +1,32 @@
+Due on 12/2, submit a single file as doc, docx, or pdf in Canvas.
+
+1. (15%) Decipher the following ciphertext, which was encrypted with the Caesar cipher: TEBKFKQEBZLROPBLCERJXKBSBKQP. Follow the example on pages 13-16 of lec06.pdf to find the key and the plaintext.
+(a) Make a program to compute the table of correlation Phi(i) for this question. The table looks like the table on page 16 of lect06.pdf. But no need to submit your program. Show the table in your report.
+(b) Show the key and the plaintext.
+
+2. (10%) Let k be the encryption key for a Caesar cipher. Then, the decryption key is 26-k. One of the characteristics of a public key system is that the encryption and decryption keys are different. Why is the Caesar cipher not a public key system, even though its encryption and decryption keys are different?
+
+3. (15%) We have a law: (ab)%n = ((a%n)(b%n))%n. We want to compute (35^77)%83, i.e. 35 powers to 77 then modulo over 83.
+(a) Show how to use the law to reduce the number of multiplications of this computation from 76 multiplications to 9 multiplications.
+(b) Make a C or C++ or Java program to implement an integer exponentiation function dexp(unsigned int x, unsigned int y, unsigned int n) that returns (x^y)%n with reduced multiplications. Copy and paste your code in your homework submission.
+(c) Use your program to get the result of (35^77)%83. Show the result.
+
+4. (10%) A program exclusive or's all bytes in its input to produce a one-byte hash. Is this program a secure hash function or not? Show one example of inputs to justify your answer.
+
+5. (10%) Multiply two large numbers p and q (you will need to find a tool or a library by yourself)
+   p = 0xc315d99cf91a018dafba850237935b2d981e82b02d994f94db0a1ae40d1fc7ab9799286ac68d620f1102ef515b348807060e6caec5320e3dceb25a0b98356399
+   q = 0xe90bbb3d4f51311f0b7669abd04e4cc48687ad0e168e7183a9de3ff9fd2d2a3a50303a5109457bd45f0abe1c5750edfaff1ad87c13eed45e1b4bd2366b49d97f
+
+6. (10%) Factorize a short large number (you will need to download and use the tool yafu)
+   N=359567260516027240236814314071842368703501656647819140843316303878351
+
+=======
+All CTF docker images are at https://userweb.cs.txstate.edu/~qg11/ctf/
+
+No partial points will be assigned to the CTF questions.
+
+7. (10%) Get the CTF docker image of "10.caesar". Show the screen shot when you catch the flag. You may read the partial solution.
+
+8. (10%) Get the CTF docker image of "11.aes". Show the screen shot when you catch the flag. You may read the partial solution.
+
+9. (10%) Get the CTF docker image of "12.rsa". Show the screen shot when you catch the flag. You may read the partial solution.
